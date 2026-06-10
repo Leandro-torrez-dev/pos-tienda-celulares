@@ -4,7 +4,7 @@ Una aplicación web moderna, reactiva y altamente optimizada de Punto de Venta (
 
 ## 🔗 Demo en Vivo
 La aplicación se encuentra desplegada en la nube y puede ser probada en tiempo real desde cualquier dispositivo a través del siguiente enlace:  
-🚀 **[PEGA_AQUÍ_TU_ENLACE_DE_VERCEL.vercel.app]**
+🚀 https://pos-tienda-celulares.vercel.app
 
 ---
 
