@@ -16,3 +16,24 @@ export const getProducts = async (): Promise<Product[]> => {
     throw error;
   }
 };
+
+
+export const loginUser = async (username: string, password: string): Promise<string> => {
+  const response = await fetch('https://fakestoreapi.com/auth/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ 
+      username: username.trim(), 
+      password: password.trim() 
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Error de autenticación en el servidor');
+  }
+
+  const data = await response.json();
+  return data.token;
+};
